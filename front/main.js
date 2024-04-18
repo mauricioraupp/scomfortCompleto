@@ -5,7 +5,7 @@ const nav = document.querySelector('.nav')
 const loginButton = document.querySelector('.loginButton')
 const models = document.querySelector('.models')
 const lobo = document.querySelector('.lobo')
-
+const coluna = document.querySelectorAll('.coluna')
 const imagemComentario = document.querySelectorAll(".imagem-comentario")
 const nomeComentario = document.querySelectorAll(".nome-comentario")
 const avaliarComentario = document.querySelectorAll(".avaliar-comentario")
@@ -20,7 +20,6 @@ window.onload = function () {
         });
 
         window.onscroll = function () {
-            console.log(scrollar)
             if (scrollar >= 580 && scrollar <= 5500) {
                 models.style.opacity = '1';
                 models.style.marginTop = '190px';
@@ -46,7 +45,16 @@ window.onload = function () {
 // }, 13000);
 
 
+function aumentarColuna() {
+    largura = window.innerWidth
+    console.log(-150 * (-largura * -0.01) + 1300);
+    coluna.forEach(function(coluna) {
+        coluna.style.height = `${-150 * (-largura * -0.01) + 1400}px`
+    }
+    )
+}
 
+setInterval(aumentarColuna, 100)
 
 
 setTimeout(() => {
