@@ -1,4 +1,4 @@
-@media screen and (max-width: 1100px) {}
+
 
 #section {
     width: 100vw;
@@ -281,7 +281,7 @@
 @media screen and (max-width: 768px) {
 
     .qualities {
-        margin-top: 0px;
+        margin-top: 150px;
         flex-direction: column;
         gap: 16rem;
     }

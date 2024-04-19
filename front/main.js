@@ -10,6 +10,8 @@ const imagemComentario = document.querySelectorAll(".imagem-comentario")
 const nomeComentario = document.querySelectorAll(".nome-comentario")
 const avaliarComentario = document.querySelectorAll(".avaliar-comentario")
 const textoComentario = document.querySelectorAll(".texto-comentario")
+const carrouselContainer = document.querySelector(".carrousel-container")
+const carrouselContainerCell = document.querySelector(".carrousel-container-cell")
 
 window.onload = function () {
     scrollar = pageYOffset
@@ -68,7 +70,8 @@ setTimeout(() => {
 
         
             if (window.innerWidth <= 768) {
-                console.log('g2g2g323 ')
+                carrouselContainer.style.opacity = '0';
+                carrouselContainerCell.style.opacity = '1';
                 if (scrollar <= 780) {
                     nav.style.color = '';
                     nav.style.backgroundColor = '';
@@ -117,7 +120,8 @@ setTimeout(() => {
                 }
 
             } else {
-
+                carrouselContainer.style.opacity = '1';
+                carrouselContainerCell.style.opacity = '0';
                 if (scrollar <= 780) {
                     nav.style.color = '';
                     nav.style.backgroundColor = '';
