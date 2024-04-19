@@ -62,11 +62,21 @@
 }
 
 .carrousel-container {
+    opacity: 0;
     z-index: 9;
     width: 100%;
     height: 600px;
     margin-top: -330px;
 }
+
+.carrousel-container-cell {
+    opacity: 1;
+    z-index: 9;
+    width: 130%;
+    height: 600px;
+    margin-top: -590px;
+}
+
 
 .carrousel {
     transition: 0.4s;
@@ -79,6 +89,17 @@
     margin-left: -16vw;
 }
 
+.carrousel-cell {
+    transition: 0.4s;
+    width: 110%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: -45vw;
+}
+
 .card {
     overflow: hidden;
     display: flex;
@@ -88,6 +109,19 @@
     background-color: #E9E9E9;
     width: 17.5vi;
     height: 14vi;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-cell {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    list-style: none;
+    background-color: #E9E9E9;
+    width: 33.5vi;
+    height: 34vi;
     border-radius: 10px;
     font-family: 'Inter', sans-serif;
 }
@@ -104,26 +138,89 @@
     height: 11vi;
 }
 
+.card-image-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 18vi;
+}
+
+
+.img-1 {
+    background-image: url(img/model-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 80%;
+}
+
+.img-1-cell{
+    background-image: url(img/model-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 80%;
+}
+
 .img-2 {
     background-image: url(img/model-1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 60%;
-    height: 70%;
+    width: 70%;
+    height: 80%;
+}
+
+.img-2-cell {
+    background-image: url(img/model-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 80%;
 }
 
 .img-3 {
     background-image: url(img/model-2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 60%;
-    height: 70%;
+    width: 70%;
+    height: 80%;
+}
+
+.img-3-cell {
+    background-image: url(img/model-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 80%;
+}
+
+.img-4 {
+    background-image: url(img/model-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 80%;
+}
+
+.img-5 {
+    background-image: url(img/model-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 80%;
 }
 
 .card-layout {
     padding: 0.9vi 1.3vi; 
     background-color: white;
-    height: 4vi;
+    height: 6vi;
+}
+
+.card-layout-cell {
+    padding: 0.9vi 1.3vi; 
+    background-color: white;
+    height: 16vi;
 }
 
 .card-layout h1 {
@@ -156,6 +253,36 @@
     border-radius: 2px;
 }
 
+
+.card-layout-cell h1 {
+    flex-wrap: wrap;
+    color: #353B57;
+    font-size: 3.2vi;
+    font-weight: 700;
+}
+
+.card-layout-cell h2 {
+    color: #6F7388;
+    font-size: 2.8vi;
+    font-weight: 700;
+}
+
+.card-layout-cell div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5vi;
+}
+
+.card-layout-cell div blockquote {
+    display: flex;
+    justify-content: center;
+    background-color: #E9E9E9;
+    color: #6F7388;
+    font-size: 2.5vi;
+    font-weight: 700;
+    padding: 0px 1vi;
+    border-radius: 2px;
+}
 
 
 @media screen and (max-width: 1100px) {

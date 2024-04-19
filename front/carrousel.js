@@ -25,7 +25,7 @@ function Direita() {
     }, 450);
 }
 
-direita.addEventListener('click', Direita)
+direita.addEventListener('click', Esquerda)
 
 function Esquerda() {
     carrousel.style.transition = '0s'
@@ -49,5 +49,5 @@ function Esquerda() {
     }, 50);
 }
 
-esquerda.addEventListener('click', Esquerda)
+esquerda.addEventListener('click', Direita)
 
